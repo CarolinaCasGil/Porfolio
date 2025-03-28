@@ -1,0 +1,25 @@
+header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 7%;
+    margin: 2%;
+    border: solid;
+}
+
+.header-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title-icon {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 150%;
+}
+
+.header-title-icon * {
+    margin: 15%;
+}

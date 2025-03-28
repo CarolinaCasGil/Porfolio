@@ -1,2 +1,23 @@
-<p>header works!</p>
-<button type="button" class="btn btn-primary">Primary</button>
+<header class="header">
+
+    <div class="header-title">
+        <h1>Carolina Castillo Gil</h1>
+        <h2>Full-Stack Developer</h2>
+        <div class="header-title-icon">
+            <a href="https://www.linkedin.com/in/carolina-castillo-gil-48462330b/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/CarolinaCasGil"><i class="bi bi-github"></i></a>
+        </div>
+    </div>
+
+    <div class="header-nav">
+
+    </div>
+
+    <nav class="nav">
+        <a *ngFor="let link of navLinks; let i = index"
+           [routerLink]="link.path">
+          {{ link.label }}
+        </a>
+      </nav>
+
+</header>
