@@ -23,9 +23,17 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "express": "^4.18.2",
+    "lucide-react": "^0.485.0",
+    "motion": "^12.6.2",
+    "ngx-typed-js": "^2.1.1",
     "rxjs": "~7.8.0",
+    "tailwind-merge": "^3.0.2",
     "tslib": "^2.3.0",
+    "tw-animate-css": "^1.2.5",
+    "typeit": "^8.8.7",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {

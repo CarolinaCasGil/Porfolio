@@ -2,17 +2,68 @@
     align-items: center;
     text-align: center;
     color: white;
-    border: 2px solid white;
+    margin-top: -50px;
     padding: 4%;
 }
 
-.container {
-    align-items: center;
-    border: 2px solid white;
-    padding: 10%;
+.typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 420%;
+    width: 0;
+    animation: typing 4s steps(20) forwards, blink 0.8s infinite;
 }
 
-.container-yo{
-    align-items: center;
-    border: 2px solid white;
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
+
+/* Cursor parpadeante */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.yo {
+    align-items: center;
+    text-align: center;
+}
+
+.yo-text {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 150px;
+    padding: 7.5%;
+    margin: 5%;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.yo-text .img  {
+    width: 180px; 
+    height: 180px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid white;
+}
+
+/* Estilos para el texto debajo de la imagen */
+.yo-text .text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+

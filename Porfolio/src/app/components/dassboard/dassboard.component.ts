@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, AfterViewInit, ViewChild } from '@angular/core';
+import TypeIt from 'typeit';
 
 @Component({
   selector: 'app-dassboard',
