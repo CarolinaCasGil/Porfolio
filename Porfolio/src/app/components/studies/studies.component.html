@@ -1,14 +1,38 @@
-<div class="studies">
+<div class="estudios">
 
-    <h2>Estudios</h2>
-    <div *ngFor="let study of studies">
-        <h4>{{study.title}}</h4>
-        <p>{{study.date}}</p>
-        <p>{{study.school}}</p>
-
-        <div>
-            <p *ngFor="let utility of study.utilities">{{utility}}</p>
+    <div class="studies">
+        <div *ngFor="let study of studies" class="cards">
+            <div class="card">
+                <h3 class="title">{{ study.title }}</h3>
+                <p class="date">{{ study.date }}</p>
+                <p class="location">{{ study.school }}</p>
+                <p class="description">{{ study.description }}</p>
+                <div class="languages">
+                    <span *ngFor="let language of study.utilities" class="language-bubble">{{ language }}</span>
+                </div>
+            </div>
         </div>
+    </div>
+    
+    
+
+    <div class="cursos-certificaciones">
+
+        <div class="cursos">
+            <div class="cards">
+                <div class="card">Card 1</div>
+                <div class="card">Card 2</div>
+            </div>
+        </div>
+
+        <div class="certificaciones">
+            <div class="cards">
+                <div class="card">Card 1</div>
+                <div class="card">Card 2</div>
+                <div class="card">Card 3</div>
+            </div>
+        </div>
+
     </div>
 
 </div>
