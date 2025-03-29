@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';  // Asegúrate de importar OnInit correctamente
+import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';  
 import { CommonModule } from '@angular/common';
 import { RouterModule, Router } from '@angular/router';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -9,20 +10,24 @@ import { RouterModule, Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor(private router: Router) { }
-
   navLinks = [
-    { path: 'dashboard', label: 'Dashboard', class: 'active' },
-    { path: 'studies', label: 'Estudios', class: 'inactive' },
+    { path: 'dashboard', label: 'Sobre mi' },
+    { path: 'studies', label: 'Estudios' },
   ];
 
+  selectedLink: string = 'dashboard'; // Enlace seleccionado por defecto
+
+  constructor(private router: Router, @Inject(PLATFORM_ID) private platformId: Object) { }
+
   ngOnInit() {
-    const titleElement = document.getElementById('title');
-    if (titleElement) {
-      titleElement.addEventListener('click', () => {
-        this.navigateToHome();
-      });
+    // Verifica si está en el navegador antes de acceder a document
+    if (isPlatformBrowser(this.platformId)) {
+      const titleElement = document.getElementById('title');
+      if (titleElement) {
+        titleElement.addEventListener('click', () => {
+          this.navigateToHome();
+        });
+      }
     }
   }
 
@@ -30,10 +35,8 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/']);
   }
 
-  navLinkSelected(index: number) {
-    this.navLinks.forEach((nav, i) => {
-      nav.class = i === index ? 'active' : 'inactive';
-    });
+  navLinkSelected(link: string) {
+    this.selectedLink = link; // Actualiza el enlace seleccionado
+    this.router.navigate([link]); // Navega al enlace seleccionado
   }
-
 }
