@@ -1,1 +1,21 @@
-<p>experiences works!</p>
+<div class="tittle">
+    <div class="tittle-experiencia">
+        <h2>Experiencia</h2>
+    </div>
+</div>
+
+<div class="estudios">
+    <div class="studies">
+        <div *ngFor="let ex of experience" class="cards">
+            <div class="card">
+                <h3 class="title">{{ ex.title }}</h3>
+                <p class="date">{{ ex.date }}</p>
+                <p class="location">{{ ex.place }}</p>
+                <p class="description">{{ ex.description }}</p>
+                <div class="languages">
+                    <span *ngFor="let language of ex.utilities" class="language-bubble">{{ language }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

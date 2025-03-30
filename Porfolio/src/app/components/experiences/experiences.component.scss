@@ -1,0 +1,110 @@
+.tittle {
+    font-family: Luckiest Guy;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    height: 3vh;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 50px;
+}
+
+.estudios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4%;
+}
+
+.studies {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    gap: 50px;
+    /* Espacio uniforme entre las cards */
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Permite que se ajusten en pantallas pequeñas */
+    width: 100%;
+    max-width: 1200px;
+    /* Ajuste para evitar que ocupen toda la pantalla en resoluciones grandes */
+}
+
+.card {
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    width: 90%;
+    /* Se ajusta al contenedor */
+    height: 480px;
+    /* Altura consistente */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 20px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    margin-right: 15px;
+}
+
+.location {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 35px;
+}
+
+.description {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.language-bubble {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
