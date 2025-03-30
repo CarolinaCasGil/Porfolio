@@ -1,60 +1,86 @@
+.tittle {
+    font-family: Luckiest Guy;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 3vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 2%;
+    margin-top: -30px;
+    margin-bottom: 15px;
+}
+
+.tittle-stidies {
+    font-size: 100px;
+    text-align: center;
+    width: 65%;
+}
+
+.tittle-cursos {
+    text-align: center;
+    width: 35%;
+}
+
+h2{
+    font-size: 50px;
+}
+
 .estudios {
-    display: flex; 
-    flex-direction: row; 
-    gap: 20px; 
-    height: 80vh; 
-    width: 100vw; 
-    box-sizing: border-box; 
-    padding: 4%;
+    margin-top: -5px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 75vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 2%;
 }
 
 .studies {
     display: flex;
     flex-direction: column;
-    gap: 20px; 
+    gap: 20px;
     height: 100%;
-    width: 50%;
+    width: 65%;
     padding: 4%;
     overflow-y: auto;
-    overflow-x: hidden;
 }
 
 .studies::-webkit-scrollbar {
-    width: 0px; 
-    background: transparent; 
+    width: 0px;
+    background: transparent;
 }
 
-.cursos-certificaciones {
-    display: flex;
-    flex-direction: column; 
-    gap: 20px; 
-    flex: 1; 
-    width: 100%;
-}
-
-.cursos, .certificaciones {
-    background-color: #f0f0f0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 50%;
-    box-sizing: border-box;
-    width: 100%; 
-}
-
-.cards {
+.cursos {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 100%;
+    height: 100%;
+    width: 35%;
+    padding: 4%;
+    overflow-y: auto;
 }
 
-.card {
-    background-color: #fff;
+.cursos .card {
     padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: left;
+    position: relative;
+    overflow-y: auto;
+}
+
+.cursos::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.studies .card {
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -79,13 +105,14 @@
 }
 
 .location {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
     margin-top: 10px;
     margin-bottom: 15px;
 }
 
 .description {
-    font-size: 1rem; /* Aumentar tamaño de descripción */
+    font-size: 1rem;
+    /* Aumentar tamaño de descripción */
     color: #555;
     margin-bottom: 15px;
 }

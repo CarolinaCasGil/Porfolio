@@ -1,3 +1,14 @@
+<div class="tittle">
+    <div class="tittle-stidies">
+        <h2>ESTUDIOS</h2>
+    </div>
+    <div class="tittle-cursos">
+        <h2>CERTIFICACIONES</h2>
+    </div>
+</div>
+
+
+
 <div class="estudios">
 
     <div class="studies">
@@ -13,26 +24,20 @@
             </div>
         </div>
     </div>
-    
-    
 
-    <div class="cursos-certificaciones">
 
-        <div class="cursos">
-            <div class="cards">
-                <div class="card">Card 1</div>
-                <div class="card">Card 2</div>
+
+    <div class="cursos">
+        <div *ngFor="let cur of cursos" class="cards">
+            <div class="card">
+                <h3 class="title">{{ cur.title }}</h3>
+                <p class="date">{{ cur.date }}</p>
+                <p class="location">{{ cur.school }}</p>
+                <div class="languages">
+                    <span *ngFor="let language of cur.utilities" class="language-bubble">{{ language }}</span>
+                </div>
             </div>
         </div>
-
-        <div class="certificaciones">
-            <div class="cards">
-                <div class="card">Card 1</div>
-                <div class="card">Card 2</div>
-                <div class="card">Card 3</div>
-            </div>
-        </div>
-
     </div>
 
 </div>

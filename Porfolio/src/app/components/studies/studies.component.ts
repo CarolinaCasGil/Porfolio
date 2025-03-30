@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
 })
 export class StudiesComponent {
 
-studies = [
+  studies = [
     {
       title: 'GRADO SUPERIOR DISEÑO DE APLICACIONES MULTIPLATAFORMA',
       school: 'Centro Europeo de Estudios Profesionales',
@@ -24,6 +24,28 @@ studies = [
       date: '2020-2022',
       utilities: ['PHP', 'HTML', 'CSS']
     }
-]
+  ]
+
+  cursos = [
+    {
+      title: 'GOOGLE: INTELIGENCIA ARTIFICIAL Y PRODUCTIVIDAD',
+      school: 'Santander',
+      date: 'Feb - 2025',
+      utilities: ['Google Gemini']
+    },
+    {
+      title: 'SPRING BOOT',
+      school: 'Udemy',
+      date: 'Feb - 2025',
+      utilities: ['Spring Boot']
+    },
+    {
+      title: 'CERTIFICACIONES DE ORALCE JAVA PROGRAMER',
+      school: 'Oracle',
+      date: 'Ene - 2025',
+      utilities: ['Java 8']
+    }
+  ]
+
 
 }
