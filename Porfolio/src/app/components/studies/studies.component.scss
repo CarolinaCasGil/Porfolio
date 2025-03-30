@@ -352,6 +352,13 @@ h2 {
     .location {
         margin-top: 0;
     }
+
+    .languages {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px; 
+        margin-bottom: 5px;
+    }
 }
 
 @media (max-width: 480px) {
