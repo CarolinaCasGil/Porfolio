@@ -33,7 +33,7 @@ export class StudiesComponent {
     },
     {
       title: 'GRADO SUPERIOR DISEÑO DE APLICACIONES MULTIPLATAFORMA',
-      school: 'Centro Europeo de Estudios Profesionales',
+      school: 'Metrodora',
       date: '2022 - 2024',
       description: 'Durante el Grado Superior en Diseño de Aplicaciones Multiplataforma, he aprendido a desarrollar aplicaciones para diferentes plataformas, como móviles, tabletas y la web. He adquirido conocimientos en programación utilizando lenguajes como Java, HTML y CSS, y también he trabajado con bases de datos y servicios web. Además, he desarrollado habilidades en el diseño de interfaces, análisis de requisitos y gestión de proyectos.',
       utilities: ['Java', 'HTML', 'CSS', 'SQL', 'Python']
