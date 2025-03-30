@@ -79,6 +79,7 @@ ul{
     justify-content: center; 
     width: 100%;
     margin-bottom: 20px;
+    border-bottom: none !important;
 }
 
 .nav-tabs .nav-link {
@@ -87,6 +88,8 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: none !important;
+    outline: none !important;
 }
 
 .nav-tabs .nav-item {
