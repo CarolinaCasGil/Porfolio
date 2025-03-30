@@ -136,53 +136,57 @@ h2 {
         text-align: center; 
         height: auto;
         margin-top: 20px;
-        margin-bottom: -40px;
-        margin-left: -10px;
+        margin-bottom: 0; /* Cambiado de -40px a 0 para evitar superposición */
+        margin-left: 0; /* Cambiado de -10px a 0 para evitar desplazamiento */
     }
 
     h2 {
         font-size: 35px;
+        margin-bottom: 10px; /* Añadido margen inferior para separación */
     }
 
     .estudios {
         margin-top: 10px;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px; /* Reducido el espacio entre estudios */
     }
     
-    .studies{
+    .studies {
         height: auto;
         display: flex;
         flex-direction: column;
     }
+
     .cards {
         display: flex;
         flex-direction: column; 
         align-items: center;
-        gap: 20px;
+        gap: 15px; /* Reducido el espacio entre cards */
         padding: 2%;
-        height: 100%;
-        
+        height: auto; /* Cambiado de 100% a auto para evitar estiramiento innecesario */
     }
 
     .card {
         width: 100%; 
         max-width: 650px; 
-        padding: 3%;
+        padding: 2%; /* Reducido el padding para que ocupen menos espacio */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Añadido un poco de sombra para mejorar la apariencia */
+        border-radius: 5px; /* Añadido borde redondeado para un mejor diseño */
     }
 
     .title {
         font-size: 30px; 
         margin-top: 10px;
+        margin-bottom: 5px; /* Añadido margen inferior para separación */
     }
 
-    
     .info {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         font-size: 0.9rem;
+        margin-top: 5px; /* Añadido margen superior para separación */
     }
 
     .date {
@@ -194,15 +198,13 @@ h2 {
         margin-top: 0;
         font-size: 18px; 
     }
-    
 
     .languages {
         display: flex;
         flex-wrap: wrap;
-        gap: 6px; 
+        gap: 4px; /* Reducido el espacio entre lenguajes */
         margin-bottom: 5px;
     }
-
 }
 
 @media (max-width: 480px) {

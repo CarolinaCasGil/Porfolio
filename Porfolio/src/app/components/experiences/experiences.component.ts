@@ -22,7 +22,7 @@ export class ExperiencesComponent {
       place: 'Inet Smart ITC',
       date: '2022',
       description:'-Implementé soluciones de análisis de datos con Google Cloud, Looker Studio y herramientas de BI (Power BI, Python, SQL) que mejoraron la eficiencia operativa en un 10% y redujeron costos en un 15%. Contribuí a mejorar la toma de decisiones con análisis basados en datos precisos que llevo afluencia en ciertos locales comerciales un 25%.',
-      utilities: ['Reparación de equipos informáticos', 'Sistemas informáticos', 'Servicios técnicos', 'Gestión de sistemas', 'Infraestructura de tecnologías de la información']
+      utilities: ['Sistemas informáticos', 'Servicios técnicos', 'Gestión de sistemas', 'Reparación de equipos informáticos', 'Infraestructura de tecnologías de la información']
     }
   ]
 
