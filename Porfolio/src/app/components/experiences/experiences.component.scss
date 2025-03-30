@@ -37,13 +37,10 @@ h2 {
 .cards {
     display: flex;
     gap: 50px;
-    /* Espacio uniforme entre las cards */
     justify-content: center;
     flex-wrap: wrap;
-    /* Permite que se ajusten en pantallas pequeñas */
     width: 100%;
     max-width: 1200px;
-    /* Ajuste para evitar que ocupen toda la pantalla en resoluciones grandes */
 }
 
 .card {
@@ -55,9 +52,7 @@ h2 {
     justify-content: space-between;
     text-align: left;
     width: 90%;
-    /* Se ajusta al contenedor */
     height: 480px;
-    /* Altura consistente */
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
@@ -83,15 +78,12 @@ h2 {
 
 .location {
     font-size: 20px;
-    font-weight: bold;
     margin-top: 35px;
 }
 
 .description {
     font-size: 18px;
-    color: #555;
     margin-top: 10px;
-    flex-grow: 1;
 }
 
 .languages {
@@ -141,6 +133,7 @@ h2 {
 @media (max-width: 768px) {
     .tittle {
         flex-direction: column;
+        text-align: center; 
         height: auto;
         margin-top: 20px;
         margin-bottom: -40px;
@@ -169,13 +162,18 @@ h2 {
         gap: 20px;
         padding: 2%;
         height: 100%;
+        
     }
 
-    
+    .card {
+        width: 100%; 
+        max-width: 650px; 
+        padding: 3%;
+    }
 
     .title {
+        font-size: 30px; 
         margin-top: 10px;
-        font-size: 24px;
     }
 
     
@@ -185,7 +183,6 @@ h2 {
         justify-content: space-between;
         align-items: center;
         font-size: 0.9rem;
-        margin-top: 15px;
     }
 
     .date {
@@ -195,14 +192,9 @@ h2 {
 
     .location {
         margin-top: 0;
+        font-size: 18px; 
     }
-
-    .card .description {
-        align-content: center;
-        font-size: 1rem;
-        margin-bottom: 10px;
-    }
-
+    
 
     .languages {
         display: flex;
