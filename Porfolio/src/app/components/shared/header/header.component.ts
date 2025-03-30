@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
   navLinks = [
     { path: 'dashboard', label: 'Sobre mi' },
     { path: 'studies', label: 'Estudios' },
+    { path: 'experiences', label: 'Experiencia' },
   ];
 
   selectedLink: string = 'dashboard'; // Enlace seleccionado por defecto
