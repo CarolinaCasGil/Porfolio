@@ -11,14 +11,14 @@ export class StudiesComponent {
 
   studies = [
     {
-      title: 'Cursus 42',
+      title: 'Cursus 42 Telefonica',
       school: 'Telefonica',
       date: 'Mar 2025 - Actualmente',
       description: '42 es una academia de programación innovadora y gratuita que utiliza un enfoque basado en el aprendizaje entre pares y proyectos prácticos. No cuenta con profesores ni clases tradicionales, fomentando la autonomía, la resolución de problemas y el trabajo en equipo. Su metodología permite a los estudiantes aprender a programar a través de desafíos progresivos en un entorno colaborativo.',
       utilities: ['C', 'Linux ', 'Git ', 'SQL', 'P2P ', 'Trabajo en equipo ', 'Aprendizaje autodidacta']
     },
     {
-      title: 'Piscina 42',
+      title: 'Piscina 42 Telefonica',
       school: 'Telefonica',
       date: 'Feb - Mar 2025',
       description: 'Bootcamp de programación intensivo basado en el aprendizaje entre pares y la resolución de problemas. Durante la Piscina de 42, me sumergí en un entorno altamente exigente donde la programación y la lógica fueron la clave para superar desafíos diarios. Sin profesores ni clases tradicionales, el aprendizaje se basó en la colaboración, la resolución de problemas y la capacidad de adaptarme a nuevos conceptos de manera autónoma.',
