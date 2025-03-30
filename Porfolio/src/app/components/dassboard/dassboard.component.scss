@@ -74,6 +74,25 @@ ul{
     margin-bottom: -50px;
 }
 
+
+ul.nav-tabs {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px; 
+    flex-wrap: nowrap; 
+}
+
+ul.nav-tabs li {
+    display: inline-block;
+}
+
+
+
 .nav-tabs {
     display: flex;
     justify-content: center; 
@@ -113,7 +132,6 @@ ul{
 
 .nav-tabs .nav-item .nav-link.active {
     border-radius: 50%; 
-    background-color: #f0f0f0;
 }
 
 .tab-content {
@@ -128,4 +146,115 @@ ul{
     width: 100%;
     max-width: 1400px; 
     text-align: center; 
+}
+
+/* ================== MEDIA QUERIES PARA RESPONSIVE ================== */
+@media (max-width: 1024px) {
+    .name {
+        padding: 6%;
+        margin-top: -30px; 
+    }
+
+    .typing-animation {
+        font-size: 300%; 
+    }
+
+    .yo-text {
+        padding: 8%;
+        margin: 3%;
+        border-radius: 100px;
+    }
+
+    .yo-text .img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .yo-text .text {
+        font-size: 110%;
+    }
+}
+
+@media (max-width: 768px) {
+    .name {
+        padding: 8%;
+        margin-top: -20px;
+    }
+
+    .typing-animation {
+        font-size: 250%;
+    }
+
+    .yo-text {
+        padding: 10%;
+        margin: 5%;
+        border-radius: 80px;
+    }
+
+    .yo-text .img {
+        width: 160px;
+        height: 160px;
+        margin-top: -40px;
+    }
+
+    .yo-text .text {
+        font-size: 100%;
+    }
+
+    .nav-tabs {
+        flex-direction: column;
+    }
+
+    .nav-tabs .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .tab-content {
+        text-align: center;
+    }
+
+    ul.nav-tabs {
+        gap: 10px; 
+    }
+    
+    .flag-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        padding: 10%;
+        margin-top: -10px;
+    }
+
+    .typing-animation {
+        font-size: 200%;
+    }
+
+    .yo-text {
+        padding: 12%;
+        margin: 5%;
+        border-radius: 60px;
+    }
+
+    .yo-text .img {
+        width: 120px;
+        height: 120px;
+        margin-top: -20px;
+    }
+
+    .yo-text .text {
+        font-size: 90%;
+    }
+
+    .flag-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .nav-tabs .nav-item {
+        margin: 5px 0;
+    }
 }
