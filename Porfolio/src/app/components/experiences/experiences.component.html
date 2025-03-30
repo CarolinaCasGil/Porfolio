@@ -9,8 +9,10 @@
         <div *ngFor="let ex of experience" class="cards">
             <div class="card">
                 <h3 class="title">{{ ex.title }}</h3>
-                <p class="date">{{ ex.date }}</p>
-                <p class="location">{{ ex.place }}</p>
+                <div class="info">
+                    <p class="location">{{ ex.place }}</p>
+                    <p class="date">{{ ex.date }}</p>
+                </div>
                 <p class="description">{{ ex.description }}</p>
                 <div class="languages">
                     <span *ngFor="let language of ex.utilities" class="language-bubble">{{ language }}</span>
