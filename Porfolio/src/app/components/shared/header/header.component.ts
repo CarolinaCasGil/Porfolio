@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';  
+import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Router } from '@angular/router';
 import { isPlatformBrowser } from '@angular/common';
@@ -36,8 +36,18 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['/']);
   }
 
+  menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
   navLinkSelected(link: string) {
-    this.selectedLink = link; // Actualiza el enlace seleccionado
-    this.router.navigate([link]); // Navega al enlace seleccionado
+    this.selectedLink = link; 
+    this.router.navigate([link]);
+
+    if (window.innerWidth <= 480) {
+      this.menuOpen = false;
+    }
   }
 }

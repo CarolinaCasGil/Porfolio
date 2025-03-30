@@ -1,5 +1,8 @@
 <header class="header">
-    <div class="header-nav">
+    <div class="menu-toggle" (click)="toggleMenu()">☰</div>
+
+    <div class="header-nav" [ngClass]="{ 'show': menuOpen }">
+        <!-- Apartados del menú a la izquierda -->
         <nav class="nav">
             <a *ngFor="let link of navLinks" (click)="navLinkSelected(link.path)"
                 [ngClass]="{'selected': selectedLink === link.path}">
@@ -8,6 +11,7 @@
         </nav>
     </div>
 
+    <!-- Iconos alineados a la derecha -->
     <div class="header-icon">
         <a href="https://www.linkedin.com/in/carolina-castillo-gil-48462330b/"><i class="bi bi-linkedin"></i></a>
         <a href="https://github.com/CarolinaCasGil"><i class="bi bi-github"></i></a>
