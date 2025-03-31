@@ -56,17 +56,37 @@
     flex-direction: row;
     font-size: 1.5em;
     gap: 15px;
+
+    a {
+        position: relative;
+        text-decoration: none;
+        color: white;
+        font-size: 40px; 
+        transition: transform 0.2s;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+
+        span {
+            position: absolute;
+            bottom: 0px;
+            right: -5px;
+            background-color: rgb(67, 128, 169);
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+    }
 }
 
-.header-icon * {
-    transition: transform 0.2s;
-    color: white;
-    font-size: 40px; 
-}
 
-.header-icon *:hover {
-    transform: scale(1.5); 
-}
 
 @media screen and (max-width: 1024px) {
     .header {
